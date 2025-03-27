@@ -1,29 +1,30 @@
 """Provide the primary functions."""
 
 
-def canvas(with_attribution=True):
-    """
-    Placeholder function to show example docstring (NumPy format).
+import networkx as nx
 
-    Replace this function and doc string for your own project.
+def build_graph1():
+    G = nx.Graph()
+    G.add_nodes_from([i for i in range(10)])
+    G.add_edges_from([(i,(i+1)% G.number_of_nodes() ) for i in range(10)])
+    G.add_edge(2,5)
+    G.add_edge(4,8)
+    G.add_edge(4,0)
+    for e in G.edges:
+        G.edges[e]['weight'] = 1.0
 
-    Parameters
-    ----------
-    with_attribution : bool, Optional, default: True
-        Set whether or not to display who the quote is from.
-
-    Returns
-    -------
-    quote : str
-        Compiled string including quote and optional attribution.
-    """
-
-    quote = "The code is but a canvas to our imagination."
-    if with_attribution:
-        quote += "\n\t- Adapted from Henry David Thoreau"
-    return quote
-
+    return G
+    
+def build_graph2():
+    N = 6
+    Jval = 2.0
+    G = nx.Graph()
+    G.add_nodes_from([i for i in range(N)])
+    G.add_edges_from([(i,(i+1)% G.number_of_nodes() ) for i in range(N)])
+    for e in G.edges:
+        G.edges[e]['weight'] = Jval
+    return G
 
 if __name__ == "__main__":
     # Do something if this file is invoked on its own
-    print(canvas())
+    pass
