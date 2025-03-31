@@ -3,7 +3,9 @@
 
 import networkx as nx
 
-def build_graph1():
+def build_graph1(verbose=0):
+    if verbose > 0: print(" Building Graph 1 with 10 sites")
+
     G = nx.Graph()
     G.add_nodes_from([i for i in range(10)])
     G.add_edges_from([(i,(i+1)% G.number_of_nodes() ) for i in range(10)])
@@ -15,7 +17,8 @@ def build_graph1():
 
     return G
     
-def build_graph2():
+def build_graph2(verbose=0):
+    if verbose > 0: print(" Building Graph 2 with 6 sites")
     N = 6
     Jval = 2.0
     G = nx.Graph()
