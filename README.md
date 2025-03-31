@@ -1,8 +1,8 @@
 GraphBuilder
 ==============================
 [//]: # (Badges)
-[![GitHub Actions Build Status](https://github.com/nmayhall-vt/graphbuilder/workflows/CI/badge.svg)](https://github.com/nmayhall-vt/graphbuilder/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/nmayhall-vt/GraphBuilder/branch/main/graph/badge.svg)](https://codecov.io/gh/nmayhall-vt/GraphBuilder/branch/main)
+[![GitHub Actions Build Status](https://github.com/CHEM-PHYS-X684/graphbuilder/workflows/CI/badge.svg)](https://github.com/CHEM-PHYS-X684/graphbuilder/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/CHEM-PHYS-X684/GraphBuilder/branch/main/graph/badge.svg)](https://codecov.io/gh/CHEM-PHYS-X684/GraphBuilder/branch/main)
 
 
 Build graphs
